@@ -76,23 +76,34 @@
 
 <section id="services" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-4">Наші послуги</h2>
-        <div class="row text-center">
-            <div class="col-md-4">
-                <i class="fas fa-piggy-bank fa-3x mb-3"></i>
-                <h4>Інвестування</h4>
-                <p>Стратегії довгострокового зростання капіталу з мінімальним ризиком.</p>
+        <h2 class="text-center mb-5 text-primary fw-bold">Наші послуги</h2>
+
+        <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <i class="fas fa-piggy-bank fa-5x mb-4 text-primary"></i>
+                    <h4 class="fw-bold">Інвестування</h4>
+                    <p>Стратегії довгострокового зростання капіталу з мінімальним ризиком.</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fas fa-coins fa-5x mb-4 text-success"></i>
+                    <h4 class="fw-bold">Фінансове планування</h4>
+                    <p>Персональні фінансові плани під ваші цілі та стиль життя.</p>
+                </div>
+                <div class="carousel-item">
+                    <i class="fas fa-chart-line fa-5x mb-4 text-info"></i>
+                    <h4 class="fw-bold">Консалтинг</h4>
+                    <p>Професійні поради щодо ринку, інвестицій та керування ризиками.</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <i class="fas fa-coins fa-3x mb-3"></i>
-                <h4>Фінансове планування</h4>
-                <p>Персональні фінансові плани під ваші цілі та стиль життя.</p>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Послуга 1"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Послуга 2"></button>
+                <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Послуга 3"></button>
             </div>
-            <div class="col-md-4">
-                <i class="fas fa-chart-line fa-3x mb-3"></i>
-                <h4>Консалтинг</h4>
-                <p>Професійні поради щодо ринку, інвестицій та керування ризиками.</p>
-            </div>
+
         </div>
     </div>
 </section>
@@ -301,7 +312,7 @@
 
                 const alertBox = document.createElement("div");
                 alertBox.className = "alert alert-success mt-3 text-center";
-                alertBox.innerText = "✅ Повідомлення надіслано. Очікуйте на відповідь.";
+                alertBox.innerText = "Повідомлення надіслано. Очікуйте на відповідь.";
                 form.after(alertBox);
 
                 setTimeout(() => alertBox.remove(), 4000);
