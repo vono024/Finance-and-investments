@@ -298,38 +298,32 @@
 </section>
 
 <section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">Зв’яжіться з нами</h2>
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="card shadow-lg border-0">
-                    <div class="card-body p-4">
-                        <form>
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Ім’я <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="name" placeholder="Ваше ім’я" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="subject" class="form-label">Тема</label>
-                                <input type="text" class="form-control" id="subject" placeholder="Наприклад: Запитання щодо послуг">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Повідомлення <span class="text-danger">*</span></label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg">Надіслати повідомлення</button>
-                            </div>
-                        </form>
-                    </div>
+    <div class="container-fluid px-5">
+        <h2 class="text-center mb-4 text-primary fw-bold">Зв’яжіться з нами</h2>
+
+        <form class="bg-white p-5 shadow rounded mx-auto" style="max-width: 100%;">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <label for="name" class="form-label">Ім’я <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="name" placeholder="Ваше ім’я" required>
                 </div>
-                <p class="text-center mt-4 text-muted">Ми відповімо вам протягом 24 годин у робочі дні.</p>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-3">
+                    <label for="subject" class="form-label">Тема</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Наприклад: Запитання щодо послуг">
+                </div>
             </div>
-        </div>
+
+            <div class="mb-4">
+                <label for="message" class="form-label">Повідомлення <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Ваше повідомлення..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 fs-5">Надіслати повідомлення</button>
+        </form>
     </div>
 </section>
 
